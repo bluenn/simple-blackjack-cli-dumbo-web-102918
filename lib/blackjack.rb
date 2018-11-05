@@ -43,14 +43,14 @@ def hit?(total)
 
   if get_user_input == 's'
     return total
-  end
+  
 
-  if get_user_input == 'h'
+  elsif get_user_input == 'h'
      deal_card
      total+= deal_card
-  end
+  
 
-  if get_user_input != 'h' && get_user_input != 's'
+else
     invalid_command
     prompt_user
   end
@@ -70,7 +70,7 @@ end
 #  def runner
 #   welcome
 #   initial_round
-#   while sum < 21
+#   while total < 21
 #    hit?
 #    display_card_total
 #  end
