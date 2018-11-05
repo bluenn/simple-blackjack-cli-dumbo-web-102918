@@ -69,12 +69,9 @@ end
 
 def runner
   welcome
-  initial_round
-  initial_total = initial_round
-  additional_score = hit?
-  subtotal = initial_total + additional_score
-  while subtotal <= 21
-   hit?(total)
+  total = initial_round
+  while total <= 21
+   total += hit?(total)
    display_card_total(subtotal)
  end
  end_game
