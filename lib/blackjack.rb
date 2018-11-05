@@ -21,7 +21,7 @@ end
 
 def get_user_input
   # code #get_user_input here
-  user_participation = gets.chomp
+  user_dealchoice = gets.chomp
 end
 
 def end_game(total)
@@ -39,13 +39,13 @@ end
 def hit?(total)
   # code hit? here
   prompt_user
-  answer = get_user_input
+  user_dealchoice = get_user_input
 
-  if answer == 's'
+  if user_dealchoice == 's'
     return total
 
 
-  elsif answer == 'h'
+  elsif user_dealchoice == 'h'
      deal_card
      total+= deal_card
 
