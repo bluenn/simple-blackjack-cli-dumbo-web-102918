@@ -46,8 +46,8 @@ def hit?(total)
 
 
   elsif user_dealchoice == 'h'
-     number = deal_card
-     total+= number
+     points = deal_card
+     total+= points
 
 
 else
