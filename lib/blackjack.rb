@@ -74,7 +74,7 @@ def runner
   additional_score = hit?
   subtotal = initial_total + additional_score
   while subtotal <= 21
-   hit?
+   hit?(total)
    display_card_total(subtotal)
  end
  end_game
